@@ -1,0 +1,252 @@
+<!doctype html>
+<!-- 言語の指定 -->
+<html lang="ja">
+
+<head>
+    <!-- Webの世界ではUTF-8を使用するのが一般的 -->
+    <meta charset="utf-8">
+    <!-- モバイル端末向けの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap.min.cssの読み込み integrity属性により、不正なファイルの読み込みを防ぐ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>タイトル</title>
+</head>
+
+<body>
+<h1>Grid System(等幅に分割)</h1>
+<!-- colの数だけ分割される -->
+<div class="row">
+    <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+</div>
+
+<div class="row">
+    <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+</div>
+<div class="row">
+    <div class="col" style="background:#79F;height:200px;">ブロックA</div>
+    <div class="col" style="background:#9BF;height:200px;">ブロックB</div>
+    <div class="col" style="background:#79F;height:200px;">ブロックC</div>
+    <div class="col" style="background:#9BF;height:200px;">ブロックD</div>
+</div>
+
+<!-- 1行は12列で構成される -->
+<div class="row">
+    <div class="col-2" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col-7" style="background:#FB8;height:200px;">ブロックA</div>
+</div>
+
+<!-- colとcol-Nを混在させることができる その場合はcolは残りの幅を等分割する -->
+<div class="row">
+    <div class="col-2" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロックC</div>
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックD</div>
+</div>
+
+<!-- 合計幅が12列に満たない場合、右側に空白が設けられる -->
+<div class="row">
+    <div class="col-2" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックB</div>
+</div>
+
+<!-- 合計幅が12列より多い場合、次の行に送られる -->
+<div class="row">
+    <div class="col-8" style="background:#79F;height:200px;">ブロックA</div>
+    <div class="col-3" style="background:#9BF;height:200px;">ブロックB</div>
+    <div class="col-3" style="background:#79F;height:200px;">ブロックC</div>
+    <div class="col-2" style="background:#9BF;height:200px;">ブロックD</div>
+</div>
+
+<!-- rowクラスには-15pxのネガティブマージンが指定されていて、ページ幅がウインドウ幅よりも大きくなってしまう-->
+
+<!-- container, container-fluidクラスは左右に15pxの余白を設ける -->
+<h1 style="background:#6D9;">コンテナなしの場合</h1>
+<div class="container-fluid">
+    <h1 style="background:#6D9;">コンテナありの場合</h1>
+</div>
+
+<!-- 基本的にグリッドシステムはcontainer, container-fluidクラスで囲んで使う こうすることでページ幅とウインドウ幅が同じになる -->
+<div class="container-fluid">
+    <h1 style="background:#6D9;">Grid System(コンテナあり)</h1>
+    <div class="row">
+        <div class="col-4" style="background:#FB8;height:200px;">ブロックA</div>
+        <div class="col-8" style="background:#FD9;height:200px;">ブロックB</div>
+    </div>
+</div>
+
+<!-- no-guttersクラスはネガティブマージンを打ち消す機能を持つ こうすると左右に15pxの余白ができる -->
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-4" style="background:#FB8;height:200px;">ブロックA</div>
+        <div class="col-8" style="background:#FD9;height:200px;">ブロックB</div>
+    </div>
+</div>
+
+<!-- コンテナなしでもno-guttersでグリッドシステムを使うことができる -->
+<div class="row no-gutters">
+    <div class="col-4" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col-8" style="background:#FD9;height:200px;">ブロックB</div>
+</div>
+
+<!-- container-fluidはウインドウ幅に応じて内部の幅が変化する -->
+<div class="container-fluid">
+    <h1 style="background:#6D9;">container-fluid</h1>
+    <div class="row">
+        <div class="col-4" style="background:#FB8;height:200px;">ブロックA</div>
+        <div class="col-8" style="background:#FD9;height:200px;">ブロックB</div>
+    </div>
+</div>
+
+<!-- containerはウインドウ幅に応じて内部の幅が変化する -->
+<div class="container">
+    <h1 style="background:#6D9;">container-fluid</h1>
+    <div class="row">
+        <div class="col-4" style="background:#FB8;height:200px;">ブロックA</div>
+        <div class="col-8" style="background:#FD9;height:200px;">ブロックB</div>
+    </div>
+</div>
+
+<!-- グリッドシステムは入れ子にすることができる -->
+<h1>Grid System(ネスト)</h1>
+<div class="row">
+    <div class="col-9" style="border:solid 1px #000;height:650px;">
+        <div class="row">
+            <div class="col-12" style="background:#6D9;height:200px"><h3>新着情報</h3></div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="background:#FB8;height:150px">商品A</div>
+            <div class="col-3" style="background:#FD9;height:150px">商品B</div>
+            <div class="col-3" style="background:#FB8;height:150px">商品C</div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="background:#FB8;height:150px">商品A</div>
+            <div class="col-3" style="background:#FD9;height:150px">商品B</div>
+            <div class="col-3" style="background:#FB8;height:150px">商品C</div>
+        </div>
+    </div>
+    <div class="col-3" style="border:solid 1px #000;height:650px;">
+        <h2>Side Bar</h2>
+    </div>
+</div>
+
+<!-- 12列に満たない場合,justify-content-xxxで開始位置を指定できる -->
+<div class="container-fluid">
+    <h1>Grid System (行内の配置)</h1>
+    <div class="row justify-content-start">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3" style="background:#FD9;height:150px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックC</div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3" style="background:#FD9;height:150px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックC</div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3" style="background:#FD9;height:150px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- 等間隔で配置する -->
+<div class="container-fluid">
+    <h1>Grid System (行内の配置)</h1>
+    <div class="row justify-content-between">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3" style="background:#FD9;height:150px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックC</div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3" style="background:#FD9;height:150px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- 縦方向についてのブロック配置はalign-items-xxxで行う -->
+<div class="container-fluid">
+    <h1>Grid System (行内の配置)</h1>
+    <div class="row align-items-start">
+        <div class="col-5" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-4" style="background:#FD9;height:100px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:50px;">ブロックC</div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-5" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-4" style="background:#FD9;height:100px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:50px;">ブロックC</div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col-5" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-4" style="background:#FD9;height:100px;">ブロックB</div>
+        <div class="col-3" style="background:#FB8;height:50px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- align-self-xxxを使うことで個別に縦方向の配置ができる -->
+<div class="container-fluid">
+    <h1>Grid System (行内の配置)</h1>
+    <div class="row" style="height:180px;border:solid 1px #000;">
+        <div class="col-5 align-self-start" style="background:#FB8;height:90px;">ブロックA</div>
+        <div class="col-4 align-self-center" style="background:#FD9;height:90px;">ブロックB</div>
+        <div class="col-3 align-self-end" style="background:#FB8;height:90px;">ブロックC</div>
+    </div>
+    <div class="row" style="border:solid 1px #000;">
+        <div class="col-5 align-self-start" style="background:#FB8;height:180px;">ブロックA</div>
+        <div class="col-4 align-self-center" style="background:#FD9;height:90px;">ブロックB</div>
+        <div class="col-3 align-self-end" style="background:#FB8;height:90px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- ブロック間隔の指定はoffset-Nで行う -->
+<div class="container-fluid">
+    <h1>Grid System (間隔の指定)</h1>
+    <div class="row">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3 offset-3" style="background:#FD9;height:150px;">ブロックB</div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3" style="background:#FB8;height:150px;">ブロックC</div>
+        <div class="col-3 offset-3" style="background:#FD9;height:150px;">ブロックD</div>
+    </div>
+</div>
+
+<!-- ml-auto, mr-autoを使うことで、列数を計算しなくても配置ができる -->
+<div class="container-fluid">
+    <h1>Grid System (間隔の指定)</h1>
+    <div class="row">
+        <div class="col-3" style="background:#FB8;height:150px;">ブロックA</div>
+        <div class="col-3 ml-auto" style="background:#FD9;height:150px;">ブロックB</div>
+    </div>
+    <div class="row">
+        <div class="col-3 ml-auto" style="background:#FB8;height:150px;">ブロックC</div>
+        <div class="col-3 ml-auto" style="background:#FD9;height:150px;">ブロックD</div>
+    </div>
+    <div class="row">
+        <div class="col-3 ml-auto" style="background:#FB8;height:150px;">ブロックC</div>
+        <div class="col-3 mr-auto" style="background:#FD9;height:150px;">ブロックD</div>
+    </div>
+</div>
+
+<!-- order-Nを使うことで、ブロックの並び順を指定できる -->
+<div class="container-fluid">
+    <h1>Grid System (並び替え)</h1>
+    <div class="row">
+        <div class="col-6 order-3" style="background:#FD9;height:200px;">商品A</div>
+        <div class="col-3 order-1" style="background:#9BF;height:200px;">商品B</div>
+        <div class="col-3 order-2" style="background:#BFA;height:200px;">商品C</div>
+    </div>
+</div>
+
+<!-- Bootstrap4で使用するJavaScriptファイルの読み込み 読み込む順番が大事 -->
+<!-- Webページの表示を高速化するためにbody要素の末尾で読み込む -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
