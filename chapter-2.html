@@ -243,6 +243,143 @@
     </div>
 </div>
 
+<!-- 画像の配置 -->
+<!-- 画像サイズがブロック幅よりも大きくなってしまう ブロック幅はウインドウ幅により変化してしまうので、適切な画像サイズを求めることができない -->
+<!-- img-fluidクラスを指定することで、画像幅がブロック幅に揃えられる -->
+<div class="container">
+    <h1>Grid System (画像の配置)</h1>
+    <div class="row">
+        <div class="col-6" style="background:#FD9;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3" style="background:#9BF;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3" style="background:#BFA;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!-- px-0を指定することで画像の左右の余白が無くなる -->
+<div class="container">
+    <h1>Grid System (画像の配置)</h1>
+    <div class="row">
+        <div class="col-6 px-0" style="background:#FD9;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3 px-0" style="background:#9BF;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3 px-0" style="background:#BFA;height:350px;">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!-- 高さはブロックの内容に合わせて自動的に決定される -->
+<div class="container">
+    <h1>roaris</h1>
+    <div class="row">
+        <div class="col-6 px-0">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3 px-0">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+        <div class="col-3 px-0">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!-- col-sm-Nはウインドウ幅が576px未満の時、縦に並べる -->
+<div class="container-fluid">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col-sm-6" style="background:#FD9;height:200px;">ブロックA</div>
+        <div class="col-sm-3" style="background:#9BF;height:200px;">ブロックB</div>
+        <div class="col-sm-3" style="background:#BFA;height:200px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- col-lgのブレイクポイントは992px -->
+<div class="container-fluid">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col-lg" style="background:#FD9;height:200px;">ブロックA</div>
+        <div class="col-lg" style="background:#9BF;height:200px;">ブロックB</div>
+        <div class="col-lg" style="background:#BFA;height:200px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- モバイルファースト: スマートフォンを最優先してCSSを記述する手法 -->
+
+<!-- col-Nとcol-md-Nを混在させることもできる -->
+<div class="container-fluid">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col-12 col-md-6" style="background:#FD9;height:200px;">ブロックA</div>
+        <div class="col-6 col-md-3" style="background:#9BF;height:200px;">ブロックB</div>
+        <div class="col-6 col-md-3" style="background:#BFA;height:200px;">ブロックC</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col-md-7" style="background:#FB8;height:100px;">ブロックA</div>
+        <div class="col-md-5" style="background:#FD9;height:100px;">ブロックB</div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm col-md-6" style="background:#79F;height:150px;">ブロックC</div>
+        <div class="col-6 col-sm col-md-3" style="background:#6D9;height:150px;">ブロックD</div>
+        <div class="col-6 col-sm col-md-3" style="background:#BFA;height:150px;">ブロックE</div>
+    </div>
+</div>
+
+<!-- offset-Nも画面サイズに応じて有効/無効を切り替えられる -->
+<div class="container">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col-6" style="background:#FB8;height:100px;">ブロックA</div>
+        <div class="col-6" style="background:#FD9;height:100px;">ブロックB</div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-3" style="background:#79F;height:150px;">ブロックC</div>
+        <div class="col-6 col-md-3 offset-md-6" style="background:#6D9;height:150px;">ブロックD</div>
+    </div>
+</div>
+
+<!-- order-Nも画面サイズに応じて有効/無効を切り替えられる -->
+<div class="container">
+    <h1>ブロック配置の変化</h1>
+    <div class="row">
+        <div class="col" style="background:#FB8;height:100px;">ブロックA</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 order-md-2" style="background:#79F;height:150px;">ブロックB</div>
+        <div class="col-md-4 order-md-1" style="background:#6D9;height:150px;">ブロックC</div>
+    </div>
+</div>
+
+<!-- d-md-noneを使うと768px以上で非表示になる -->
+<div class="container">
+    <h1>要素の表示/非表示</h1>
+    <div class="row">
+        <div class="col-md-8" style="background:#FB8;height:100px;">ブロックA</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" style="background:#79F;height:150px;">ブロックB</div>
+        <div class="col d-md-none" style="background:#000;height:75px;">
+            <h3 style="color:#FFF">スマホ広告</h3>
+        </div>
+        <div class="col-md-6" style="background:#79F;height:150px;">ブロックC</div>
+    </div>
+</div>
+
 <!-- Bootstrap4で使用するJavaScriptファイルの読み込み 読み込む順番が大事 -->
 <!-- Webページの表示を高速化するためにbody要素の末尾で読み込む -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
