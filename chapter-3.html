@@ -1,0 +1,145 @@
+<!doctype html>
+<!-- 言語の指定 -->
+<html lang="ja">
+
+<head>
+    <!-- Webの世界ではUTF-8を使用するのが一般的 -->
+    <meta charset="utf-8">
+    <!-- モバイル端末向けの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap.min.cssの読み込み integrity属性により、不正なファイルの読み込みを防ぐ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>タイトル</title>
+</head>
+
+<body>
+<!-- 行揃え -->
+<div class="container">
+    <h1>行揃えの指定</h1>
+    <div class="row">
+        <div class="col-12 text-left" style="background:#FD9;"><h3>文字の配置</h3></div>
+        <div class="col-12 text-center" style="background:#9BF;"><h3>文字の配置</h3></div>
+        <div class="col-12 text-right" style="background:#BFA;"><h3>文字の配置</h3></div>
+    </div>
+    <address class="text-left text-md-right p-3" style="background:#EEE">
+        東京都新宿区百人町0-0-0<br>ABCDビル4F<br>TEL : 03-1234-5678
+    </address>
+</div>
+
+<!-- 文字の太さと斜体の指定 -->
+<div>
+    <p class="font-weight-bold">文字の太さと斜体 Bootstrap is an open source toolkit.</p>
+    <p class="font-weight-normal">文字の太さと斜体 Bootstrap is an open source toolkit.</p>
+    <p class="font-weight-light">文字の太さと斜体 Bootstrap is an open source toolkit.</p>
+    <p class="font-italic">文字の太さと斜体 Bootstrap is an open source toolkit.</p>
+</div>
+
+<!-- 文字色の指定 -->
+<!-- 統一感のあるデザインにできる -->
+<div>
+    <h3 class="text-primary">text-primaryの文字色</h3>
+    <h3 class="text-secondary">text-secondaryの文字色</h3>
+    <h3 class="text-success">text-successの文字色</h3>
+    <h3 class="text-info">text-infoの文字色</h3>
+    <h3 class="text-warning">text-warningの文字色</h3>
+    <h3 class="text-danger">text-dangerの文字色</h3>
+    <h3 class="text-dark">text-darkの文字色</h3>
+    <h3 class="text-muted">text-mutedの文字色</h3>
+    <h3 class="text-light">text-lightの文字色</h3>
+    <h3 class="text-white">text-whiteの文字色</h3>
+</div>
+
+<!-- 背景色の指定 -->
+<div>
+    <h3 class="bg-primary text-white">bg-primaryの背景色</h3>
+    <h3 class="bg-secondary text-white">bg-secondaryの背景色</h3>
+    <h3 class="bg-success text-white">bg-sucessの背景色</h3>
+    <h3 class="bg-info text-white">bg-infoの背景色</h3>
+    <h3 class="bg-warning text-white">bg-warningの背景色</h3>
+    <h3 class="bg-danger text-white">bg-dangerの背景色</h3>
+    <h3 class="bg-dark text-white">bg-darkの背景色</h3>
+    <h3 class="bg-light">bg-lightの背景色</h3>
+    <h3 class="bg-white">bg-whiteの背景色</h3>
+</div>
+
+<!-- ジャンボトロン -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="mb-3">Bootstrap</h1>
+        <p>ここではBootstrapの使い方を紹介します。<br>サイト制作の参考としてください。</p>
+    </div>
+</div>
+
+<!-- 背景に画像を指定するときは、自分でCSSを記述する -->
+<div class="container">
+    <div class="jumbotron text0¥-white" style="background:url(5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png);background-size:cover;">
+        <h1 class="mb-3">Bootstrap</h1>
+        <p>ここではBootstrapの使い方を紹介します。<br>サイト制作の参考としてください。</p>
+    </div>
+</div>
+
+<!-- リスト list-unstyledクラスを指定するとマーカーが消える -->
+<div class="container">
+    <h1 class="my-4">閉会式のプログラム</h1>
+    <ul>
+        <li>閉会の言葉</li>
+        <li>各部門賞の発表</li>
+        <ul>
+            <li>技術賞</li>
+            <li>アイデア賞</li>
+            <li>デザイン賞</li>
+        </ul>
+        <li>グランプリの発表</li>
+        <li>総評</li>
+    </ul>
+</div>
+
+<!-- リストを横に並べて配置 -->
+<div class="container">
+    <h2 class="my-4">観測地点</h2>
+    <ul class="list-inline">
+        <li class="list-inline-item">札幌</li>
+        <li class="list-inline-item">仙台</li>
+        <li class="list-inline-item">東京</li>
+        <li class="list-inline-item">名古屋</li>
+        <li class="list-inline-item">大阪</li>
+        <li class="list-inline-item">福岡</li>
+        <li class="list-inline-item">那覇</li>
+    </ul>
+</div>
+
+<!-- 定義リストの表示 -->
+<div class="container">
+    <h2 class="my-4">Webの基本言語</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Web制作の基本となる言語</dd>
+        <dt>CSS</dt>
+        <dd>書式を指定する言語</dd>
+        <dt>JavaScript</dt>
+        <dd>動きのあるWebページを作成する際に必要となる言語</dd>
+    </dl>
+</div>
+
+<!-- 横配置の定義リスト -->
+<div class="container">
+    <h2 class="my-4">Webの基本言語</h2>
+    <dl class="row">
+        <dt class="col-md-2 text-md-right">HTML</dt>
+        <dd class="col-md-10">Web制作の基本となる言語</dd>
+        <dt class="col-md-2 text-md-right">CSS</dt>
+        <dd class="col-md-10">書式を指定する言語</dd>
+        <dt class="col-md-2 text-md-right">JavaScript</dt>
+        <dd class="col-md-10">動きのあるWebページを作成する際に必要となる言語</dd>
+    </dl>
+</div>
+
+<!-- text-truncateクラスを使うと、...で省略され長い文章でも1行で表示される -->
+
+<!-- Bootstrap4で使用するJavaScriptファイルの読み込み 読み込む順番が大事 -->
+<!-- Webページの表示を高速化するためにbody要素の末尾で読み込む -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
