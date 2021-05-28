@@ -136,6 +136,207 @@
 
 <!-- text-truncateクラスを使うと、...で省略され長い文章でも1行で表示される -->
 
+<div class="container">
+    <div style="width:400px;">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid"></img>
+    </div>
+</div>
+
+<!-- img-thumnailクラスを使うと、画像が角丸の枠線で囲まれ、幅が親要素に合わせられる -->
+<div class="container">
+    <h2>画像のサムネイル表示</h2>
+    <div class="row">
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-thumbnail">
+        </div>
+    </div>
+</div>
+
+<!-- roundedを使うと角丸に、rounded-circleを使うと楕円になる 画像以外にも適用できる -->
+<div class="container">
+    <h2>画像のサムネイル表示</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mb-4">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid rounded-circle">
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrapを使うと、paddingとborderを含めて、幅や高さを指定する -->
+<div class="container">
+    <div style="width:200px;">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+    </div>
+    <div style="width:200px;padding:10px;border:solid 4px #FB8;">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+    </div>
+    <div style="width:200px;padding:20px;border:solid 8px #6D9;">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="img-fluid">
+    </div>
+</div>
+
+<!-- 枠線の描画と打ち消し -->
+<div class="bg-light border-right border-left border-danger" style="width:50px;height:50px;"></div>
+<div class="bg-light border border-right-0 border-danger m-4" style="width:50px;height:50px;"></div>
+
+<!-- 角丸の指定 -->
+<div class="bg-primary rounded-right" style="width:50px;height:20px"></div>
+
+<!-- 余白の指定 -->
+<!-- marginは m(方向)-(画面サイズ指定)-(数値) -->
+<!-- paddingは p(方向)-(画面サイズ指定)-(数値) -->
+
+<!-- float-leftで左寄せ, float-rightで右寄せ 後続は反対側に回る clearfixで回り込みを解除 -->
+<div class="container">
+    <h1 class="my-3">フロートの指定</h1>
+    <div class="clearfix">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="float-md-left mr-md-4" style="height:500px;">
+        <h3 class="mt-4 mt-md-0">roaris</h3>
+        <p>roaroaroaroa</p>
+    </div>
+    <h3 class="mt-4">roaris</h3>
+    <p>roaroaroaroa</p>
+</div>
+
+<!-- フレックスコンテナの作成 -->
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<!-- アイテムの配置を変える -->
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex justify-content-center bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex justify-content-start bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex justify-content-end bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex justify-content-between bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex justify-content-around bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<!-- アイテムを並べる方向を指定 -->
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex flex-row bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex flex-row-reverse bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex flex-column bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="my-3">フレックスボックスの活用</h1>
+    <div class="d-flex flex-column-reverse bg-info">
+        <div class="bg-warning m-2 p-3">札幌</div>
+        <div class="bg-warning m-2 p-3">東京</div>
+        <div class="bg-warning m-2 p-3">名古屋</div>
+        <div class="bg-warning m-2 p-3">大阪</div>
+        <div class="bg-warning m-2 p-3">福岡</div>
+    </div>
+</div>
+
+
+
 <!-- Bootstrap4で使用するJavaScriptファイルの読み込み 読み込む順番が大事 -->
 <!-- Webページの表示を高速化するためにbody要素の末尾で読み込む -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
