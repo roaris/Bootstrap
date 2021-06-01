@@ -72,7 +72,7 @@
 
 <!-- 背景に画像を指定するときは、自分でCSSを記述する -->
 <div class="container">
-    <div class="jumbotron text0¥-white" style="background:url(5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png);background-size:cover;">
+    <div class="jumbotron text-white" style="background:url(5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png);background-size:cover;">
         <h1 class="mb-3">Bootstrap</h1>
         <p>ここではBootstrapの使い方を紹介します。<br>サイト制作の参考としてください。</p>
     </div>
@@ -590,6 +590,459 @@
             <tr><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
         </tbody>
     </table>
+</div>
+
+<!-- 色をつけることもできる -->
+<div class="container">
+    <h1 class="my-3">空室案内</h1>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr><th>部屋No.</th><th>タイプ</th><th>定員</th><th>喫煙</th><th>料金</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td class="table-warning">可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td class="table-warning">可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr class="table-primary"><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr class="table-success"><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- table-smを使うとコンパクトに表示される -->
+<div class="container">
+    <h1 class="my-3">空室案内</h1>
+    <table class="table table-sm table-hover">
+        <thead class="thead-dark">
+            <tr><th>部屋No.</th><th>タイプ</th><th>定員</th><th>喫煙</th><th>料金</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td class="table-warning">可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td class="table-warning">可</td><td>8800円</td></tr>
+            <tr><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr class="table-primary"><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+            <tr class="table-success"><td>402</td><td>ツイン</td><td>2名</td><td>可</td><td>8800円</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- カードデザイン card-title, card-subtitle, card-text, card-linkが指定できる -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="card" style="width:300px;">
+        <div class="card-body">
+            <h5 class="card-title">roaris</h5>
+            <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+            <p class="card-text">roaroaroaroa</p>
+            <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+            <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+        </div>
+    </div>
+</div>
+
+<!-- グリッドシステム+カードデザイン -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">roaris</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                    <p class="card-text">roaroaroaroa</p>
+                    <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                    <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- カードの中に画像を入れる -->
+<!-- card-img-topでcard-bodyよりも前に配置される -->
+<!-- card-img-bottomでcard-bodyよりも後に配置される -->
+<!-- card-imgでcard-bodyの中に配置される -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">roaris</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                    <p class="card-text">roaroaroaroa</p>
+                    <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                    <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">roaris</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                    <p class="card-text">roaroaroaroa</p>
+                    <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                    <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+                </div>
+                <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-bottom">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">roaris</h5>
+                    <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img mb-2">
+                    <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                    <p class="card-text">roaroaroaroa</p>
+                    <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                    <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 背景を画像にすることもできる -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="card" style="width:300px;">
+        <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img" style="opacity:0.4;">
+        <div class="card-img-overlay">
+            <h5 class="card-title">roaris</h5>
+            <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+            <p class="card-text">roaroaroaroa</p>
+            <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+            <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+        </div>
+    </div>
+</div>
+
+<!-- ヘッダー、フッターを追加したカードを作ることができる -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="card" style="width:300px;">
+        <h4 class="card-header">roaris card</h4>
+        <div class="card-body">
+            <h5 class="card-title">roaris</h5>
+            <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+            <p class="card-text">roaroaroaroa</p>
+            <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+            <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+        </div>
+        <div class="card-footer text-right">Update 2021/06/01</div>
+    </div>
+</div>
+
+<!-- 色の変更 -->
+<div class="container">
+    <h1 class="my-3">Card</h1>
+    <div class="card bg-primary text-white" style="width:300px;">
+        <h4 class="card-header">roaris card</h4>
+        <div class="card-body">
+            <h5 class="card-title">roaris</h5>
+            <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+            <p class="card-text">roaroaroaroa</p>
+            <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link text-white">続きを読む</a>
+            <a href="https://atcoder.jp/users/roaris" class="card-link text-white">AtCoder</a>
+        </div>
+        <div class="card-footer text-right">Update 2021/06/01</div>
+    </div>
+</div>
+
+<!-- カードグループ 576px以上で横に並べて配置, 576px未満は縦に並べる -->
+<div class="container">
+    <h1 class="my-3">Card groups</h1>
+    <div class="card-group">
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- カードデッキを使うと、カードとカードの間に間隔ができる その他はカードグループと同じ -->
+<div class="container">
+    <h1 class="my-3">Card Decks</h1>
+    <div class="card-deck">
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 大きさが違うカードを配置する時はカードカラムを使うと良い -->
+<div class="container">
+    <h1 class="my-3">Card columns</h1>
+    <div class="card-columns">
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">roaris</h5>
+                <h6 class="card-subtitle mb-2 text-muted">The role of roaris</h6>
+                <p class="card-text">roaroaroaroa</p>
+                <a href="https://www.youtube.com/watch?v=H6Iq0Mh0tEY" class="card-link">続きを読む</a>
+                <a href="https://atcoder.jp/users/roaris" class="card-link">AtCoder</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- メディアオブジェクト SNSのコメントを表示するのに使う -->
+<div class="container">
+    <h1 class="my-3">Media object</h1>
+    <div class="border p-3">
+        <div class="media">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                hogehoge
+            </div>
+        </div>
+        <div class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                fugafuga
+            </div>
+        </div>
+        <div class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                piyopiyo
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ulとliでもメディアオブジェクトを作成できる -->
+<div class="container">
+    <h1 class="my-3">Media object</h1>
+    <ul class="list-unstyled border p-3">
+        <li class="media">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                hogehoge
+            </div>
+        </li>
+        <li class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                fugafuga
+            </div>
+        </li>
+        <li class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                piyopiyo
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- メディアオブジェクトの階層化 -->
+<div class="container">
+    <h1 class="my-3">Media object</h1>
+    <div class="border p-3">
+        <div class="media">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <div style="height:100px">
+                    <h6 class="mb-1 text-primary">roaris</h6>
+                    hogehoge
+                </div>
+                <div class="media mt-3">
+                    <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+                    <div class="media-body">
+                        <h6 class="mb-1 text-primary">roaris</h6>
+                        fugafuga
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+                    <div class="media-body">
+                        <h6 class="mb-1 text-primary">roaris</h6>
+                        fugafuga
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                fugafuga
+            </div>
+        </div>
+        <div class="media mt-3">
+            <img src="5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png" class="mr-3 rounded-circle" style="height:100px">
+            <div class="media-body">
+                <h6 class="mb-1 text-primary">roaris</h6>
+                piyopiyo
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 入力フォームの作成 form-controlを指定すると、幅100%, 余白等が設定される -->
+<div class="container">
+    <h1 class="mt-4 mb-4">お問い合わせ</h1>
+    <form>
+        <div class="form-group mb-4">
+            <label>お名前</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group mb-4">
+            <label>メールアドレス</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group mb-4">
+            <label>お問い合わせ内容</label>
+            <textarea rows="5" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+</div>
+
+<!-- テキストボックスの高さ変更 -->
+<div class="container">
+    <form>
+        <div class="form-group mb-4">
+            <label>テキストボックス(大)</label>
+            <input type="text" class="form-control form-control-lg">
+        </div>
+        <div class="form-group mb-4">
+            <label>テキストボックス(標準)</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group mb-4">
+            <label>テキストボックス(小)</label>
+            <input type="text" class="form-control form-control-sm">
+        </div>
+    </form>
+</div>
+
+<!-- インラインフォーム 576px以上で横に並べて配置 -->
+<!-- フレックスボックスでレイアウトされるため、右揃えにはtext-rightではなく、justify-content-endを使う -->
+<!-- インラインフォームでは、label要素を表示しない sr-onlyを使うと、表示はしないが、スクリーンリーダーで読み上げられる -->
+<div class="container">
+    <div class="jumbotron text-white mb-3" style="background:url(5B8AA4B8-6784-4AB8-B4E9-5B60BE8E4712.png);background-size:cover;">
+        <h1 style="color:black;">Bootstrap</h1>
+    </div>
+    <form class="form-inline justify-content-end mb-5">
+        <label class="sr-only">ユーザー名</label>
+        <input type="text" class="form-control mb-3 mr-sm-2" placeholder="ユーザー名" size="12">
+        <label class="sr-only">パスワード</label>
+        <input type="text" class="form-control mb-3 mr-sm-2" placeholder="パスワード" size="12">
+        <button type="submit" class="btn btn-primary mb-3">Login</button>
+    </form>
 </div>
 
 <!-- Bootstrap4で使用するJavaScriptファイルの読み込み 読み込む順番が大事 -->
